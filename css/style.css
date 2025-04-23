@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #36384e;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-main {
+  background-color: #ffffff;
+  width: 904px;
+  height: 641px;
+  border-radius: 36px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+}
+.card-main__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.card-main__content h1 {
+  font-size: 56px;
+  color: #242742;
+}
+.card-main__content p {
+  color: #242742;
+}
+.card-main__content__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+}
+.card-main__content__list .list-item {
+  display: flex;
+  -moz-column-gap: 13px;
+       column-gap: 13px;
+}
+.card-main__content form {
+  display: flex;
+  flex-direction: column;
+}
+.card-main__content form label {
+  color: #242742;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.card-main__content form input {
+  color: #949494;
+  margin-bottom: 24px;
+  padding: 16px 24px;
+  border: solid 1px #949494;
+  border-radius: 8px;
+}
+.card-main__content form button {
+  background-color: #242742;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 70px;
+  border: none;
+  border-radius: 8px;
+}/*# sourceMappingURL=style.css.map */

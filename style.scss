@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+// variables
+$red: #ff6257;
+$blue-800: #242742;
+$blue-700: #36384e;
+$grey: #949494;
+$white: #ffffff;
+
+$font-family: 'Roboto', sans-serif;
+$font-size-p: 16px;
+
+// mixins
+
+// desktop style
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-p;
+  background-color: $blue-700;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-main {
+  background-color: $white;
+  width: 904px;
+  height: 641px;
+  border-radius: 36px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  column-gap: 64px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    h1 {
+      font-size: 56px;
+      color: $blue-800;
+    }
+
+    p {
+      color: $blue-800;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 11px;
+
+      .list-item {
+        display: flex;
+        column-gap: 13px;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        color: $blue-800;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+
+      input {
+        color: $grey;
+        margin-bottom: 24px;
+        padding: 16px 24px;
+        border: solid 1px $grey;
+        border-radius: 8px;
+      }
+      
+      button {
+        background-color: $blue-800;
+        color: $white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 16px 70px;
+        border: none;
+        border-radius: 8px;
+      }
+    }
+  }
+}
