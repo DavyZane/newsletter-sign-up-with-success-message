@@ -89,4 +89,49 @@ body {
       }
     }
   }
+
+  .illustration-tablet {
+    display: none;
+  }
+
+  .illustration-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-main {
+    width: 608px;
+    height: 878px;
+    padding: 40px;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    row-gap: 28px;
+  
+    &__content {
+      row-gap: 20px;
+  
+      h1 {
+        margin-bottom: -15px;
+      }
+      &__list {
+  
+        .list-item {
+          column-gap: 16px;
+        }
+      }
+    }
+
+    .illustration-desktop {
+      display: none;
+    }
+
+    .illustration-tablet {
+      display: block;
+    }
+
+    .illustration-mobile {
+      display: none;
+    }
+  }
 }

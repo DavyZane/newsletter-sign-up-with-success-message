@@ -67,4 +67,40 @@ body {
   padding: 16px 70px;
   border: none;
   border-radius: 8px;
+}
+.card-main .illustration-tablet {
+  display: none;
+}
+.card-main .illustration-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .card-main {
+    width: 608px;
+    height: 878px;
+    padding: 40px;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    row-gap: 28px;
+  }
+  .card-main__content {
+    row-gap: 20px;
+  }
+  .card-main__content h1 {
+    margin-bottom: -15px;
+  }
+  .card-main__content__list .list-item {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .card-main .illustration-desktop {
+    display: none;
+  }
+  .card-main .illustration-tablet {
+    display: block;
+  }
+  .card-main .illustration-mobile {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
