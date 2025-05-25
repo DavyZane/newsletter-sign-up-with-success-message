@@ -184,3 +184,64 @@ body {
   }
   
 }
+
+// main page success style
+
+.card-success {
+  background-color: $white;
+  width: 504px;
+  height: 520px;
+  border-radius: 36px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 32px;
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 32px;
+
+    h1 {
+      font-size: 56px;
+      color: $blue-800;
+      line-height: 100%;
+    }
+  
+    p {
+        color: $blue-800;
+      }
+  }
+
+  button {
+    background-color: $blue-800;
+    color: $white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 70px;
+    border: none;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 730px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-success {
+    width: 327px;
+    height: 623px;
+    border-radius: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
