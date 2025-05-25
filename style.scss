@@ -10,7 +10,11 @@ $white: #ffffff;
 $font-family: 'Roboto', sans-serif;
 $font-size-p: 16px;
 
-// mixins
+// utilities
+
+button:active {
+  background: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
+}
 
 // main page style
 
